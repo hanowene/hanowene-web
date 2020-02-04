@@ -6,63 +6,42 @@
           <div>
             <MapFooter class="justify-content-center"></MapFooter>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-3 about-footer">
-              <h3>Lorem Ipsum dummy text</h3>
+          <div class="row footer-information">
+            <div class="col-md-6 col-lg-4 about-footer">
+              <div class="footer-title">
+                <h4>Our Office</h4>
+              </div>
               <ul>
                 <li>
                   <a href="tel:(010) 1234 4321">
-                    <i class="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321
+                    <i class="fas fa-phone fa-flip-horizontal"></i>Jakarta : +62 823 1067 2462 (ALJUFRI)
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:(010) 1234 4321">
+                    <i class="fas fa-phone fa-flip-horizontal"></i>Jayapura : +62 821 2043 2455 (Elisa)
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:(010) 1234 4321">
+                    <i class="fas fa-phone fa-flip-horizontal"></i>Wamena : +62 813 4326 5057 (Bapa Romi)
                   </a>
                 </li>
                 <li>
                   <i class="fas fa-map-marker-alt"></i>
-                  1 / 105 Bay Lights,
-                  <br />Lorem Ipsum,
-                  <br />LIC 3201
-                </li>
-              </ul>
-              <a href class="btn red-btn">Book Now</a>
-            </div>
-            <div class="col-md-6 col-lg-2 page-more-info">
-              <div class="footer-title">
-                <h4>Page links</h4>
-              </div>
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Testimonial</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
+                    Jalan Kampung Baru 2 No.34-b, RT.8/RW.2, Ulujami, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
                 </li>
               </ul>
             </div>
 
-            <div class="col-md-6 col-lg-3 page-more-info">
+            <div class="col-md-6 col-lg-4 page-more-info">
               <div class="footer-title">
                 <h4>More Info</h4>
               </div>
               <ul>
                 <li>
-                  <a href="#">Lorem ipsum</a>
-                </li>
-                <li>
-                  <a href="#">Dolor sit amet</a>
-                </li>
-                <li>
-                  <a href="#">Consectetur Adipisicing</a>
-                </li>
-                <li>
-                  <a href="#">Ed do eiusmod tempor incididunt</a>
+                  <iframe width="350" height="300" src="https://www.youtube.com/embed/izzUyTtQDIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <!-- <a href="#">Aktivitas Kami</a> -->
                 </li>
               </ul>
             </div>
@@ -91,31 +70,15 @@
                 <tbody>
                   <tr>
                     <td>
-                      <i class="far fa-clock"></i>Monday Thursday
+                      <i class="far fa-clock"></i>Senin-Jumat
                     </td>
                     <td>9:00am - 5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="far fa-clock"></i>Friday
-                    </td>
-                    <td>9:00am - 4:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="far fa-clock"></i>Sturday
-                    </td>
-                    <td>9:00am - 1:30pm</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="far fa-clock"></i>Sunday
-                    </td>
-                    <td>9:30am - 12:00pm</td>
                   </tr>
                 </tbody>
               </table>
               <hr />
+              <div class="text-left">Media & Partner:</div>
+              <br/>
               <div class="footer-logo">
                 <table>
                   <tbody>
@@ -149,7 +112,7 @@
               <a href>Privacy policy</a>
             </div>
             <div class="col-sm-8">
-              <p>Lorem ipsum dolor sit amet @ 2019 All rights reserved</p>
+              <p>hanowene.org @ 2018 All rights reserved</p>
             </div>
           </div>
         </div>
@@ -172,6 +135,10 @@ export default {
 .footer-top {
   margin-top: -15%;
   /* margin-bottom: -25%; */
+}
+
+.footer-information {
+  margin-top: 20px;
 }
 
 h1,

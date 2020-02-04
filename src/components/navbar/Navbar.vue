@@ -15,18 +15,19 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="container">
+        <div class="">
           <ul class="navbar-nav mx-auto justify-content-center">
-            <!-- <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
-            </li>-->
+            <li class="headerImg">
+              <router-link to="/">
+                <img class="headerImg" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
+              </router-link>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <router-link to="/">Home</router-link>
-              </a>
+              <router-link to="/">
+                <a class="nav-link" href="#">
+                  HOME
+                </a>
+              </router-link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -37,19 +38,17 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Tentang Kami</a>
+              >TENTANG KAMI</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link to="/backgroundStory">
-                  <a class="dropdown-item" href="#">Latar Belakang</a>
+                  <a class="dropdown-item" href="#">LATAR BELAKANG</a>
                 </router-link>
                 <router-link to="/visionMission">
-                  <a class="dropdown-item" href="#">Visi & Misi</a>
+                  <a class="dropdown-item" href="#">VISI & MISI</a>
                 </router-link>
                 <router-link to="/ourTeam">
-                  <a class="dropdown-item" href="#">Tim Kami</a>
+                  <a class="dropdown-item" href="#">TIM KAMI</a>
                 </router-link>
-                <!-- <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>-->
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -61,10 +60,10 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Projek Kami</a>
+              >PROGRAM KAMI</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link to="/library">
-                  <a class="dropdown-item" href="#">Perpustakaan</a>
+                  <a class="dropdown-item" href="#">PERPUSTAKAAN</a>
                 </router-link>
                 <!-- <a class="dropdown-item" href="#">Tim Kami</a> -->
                 <!-- <div class="dropdown-divider"></div>
@@ -81,15 +80,15 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Ikut Terlibat</a>
+              >IKUT TERLIBAT</a>
               <!-- </router-link> -->
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link to="/buildLibrary">
-                  <a class="dropdown-item" id="block-1" href="#">Ajukan Pendirian Perpustakaan</a>
+                  <a class="dropdown-item" id="block-1" href="#">AJUKAN PENDIRIAN PERPUSATAKAAN</a>
                 </router-link>
 
                 <router-link to="/joinTeam">
-                  <a class="dropdown-item" href="#">Daftar Menjadi Tim</a>
+                  <a class="dropdown-item" href="#">DAFTAR MENJADI TIM KAMI</a>
                 </router-link>
 
                 <!-- <div class="dropdown-divider"></div>
@@ -105,16 +104,16 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Donasi</a>
+              >DONASI</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link to="/bookDonation">
-                  <a class="dropdown-item" href="#">Buku</a>
+                  <a class="dropdown-item" href="#">BUKU</a>
                 </router-link>
                 <router-link to="/EnergyAssistance">
-                  <a class="dropdown-item" href="#">Tenaga</a>
+                  <a class="dropdown-item" href="#">TENAGA</a>
                 </router-link>
                 <router-link to="/fundDonation">
-                  <a class="dropdown-item" href="#">Dana</a>
+                  <a class="dropdown-item" href="#">DANA</a>
                 </router-link>
                 <!-- <a class="dropdown-item" href="#">Tim Kami</a> -->
                 <!-- <div class="dropdown-divider"></div>
@@ -123,7 +122,7 @@
             </li>
             <li class="nav-item">
               <router-link to="/ourContact">
-                <a class="nav-link" href="#">Kontak Kami</a>
+                <a class="nav-link" href="#">KONTAK KAMI</a>
               </router-link>
             </li>
             <li class="nav-item">
@@ -151,9 +150,16 @@
 </template>
 
 <style>
+.headerImg {
+  max-height: 40px;
+  max-width: 181.56px;
+  margin: 5px 5px 5px 5px;
+}
+
 .navbar {
-  background-color:rgb(135, 141, 136);
-  color:aliceblue;
+  background-color:rgb(245, 192, 48);
+  opacity: 0.9;
+  padding: 1px 5rem 1px 5rem;
 }
 
 .home-content {
@@ -161,20 +167,34 @@
   /* position: -webkit-sticky; */
   top: 30px;
   font: 90px "Abril Fatface", sans-serif;
-  color: #fff;
   text-align: center;
 }
 
 .nav-item {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 10px 20px 20px 20px;
+  font-family: Gyre Schola, serif;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-item:hover {
+  transform: scale(1.2); 
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  font-size: 80%;
 }
 
 .navbar-nav {
   text-align: center;
+  max-height: 60px;
 }
 
-a[id="block-1"]:target ~ .block-1 {
+/* a[id="block-1"]:target ~ .block-1 {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
 }
@@ -186,5 +206,5 @@ a[id="block-2"]:target ~ #main article.article {
 a[id="block-3"]:target ~ #main article.article {
   -webkit-transform: translateY(-1000px);
   transform: translateY(-1000px);
-}
+} */
 </style>

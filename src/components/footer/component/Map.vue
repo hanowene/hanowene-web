@@ -9,7 +9,7 @@
       <br />
     </div>
     <br /> -->
-    <gmap-map :center="center" :zoom="15" style="width:100%;  height: 400px;">
+    <gmap-map :center="center" :zoom="5" style="width:100%;  height: 400px;">
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"
@@ -27,10 +27,13 @@ export default {
     return {
       // default to Montreal to keep it simple
       // change this to whatever makes sense
-      center: { lat: -4.095227, lng: 138.940452 },
+      center: { lat: -4.419070, lng: 130.184945 },
       markers: [
         {
           position: { lat: -4.095227, lng: 138.940452 }
+        },
+        {
+          position: { lat: -6.227281, lng: 106.762724 }
         }
       ],
       places: [],
@@ -70,3 +73,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.gmap {
+  max-height: 100px;
+  max-width: 100px;
+}
+</style>
