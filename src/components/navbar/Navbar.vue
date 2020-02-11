@@ -1,9 +1,9 @@
 <template>
-  <div class="sticky-top">
+  <div class="view-navbar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button
-        class="navbar-toggler"
+        class="navbar-toggler float-xs-right ml-auto hidden-sm-up"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -16,8 +16,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="">
-          <ul class="navbar-nav mx-auto justify-content-center">
-            <li class="headerImg">
+          <ul class="navbar-nav mr-auto justify-content-center">
+            <li class="nav-item">
               <router-link to="/">
                 <img class="headerImg" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
               </router-link>
@@ -65,13 +65,9 @@
                 <router-link to="/library">
                   <a class="dropdown-item" href="#">PERPUSTAKAAN</a>
                 </router-link>
-                <!-- <a class="dropdown-item" href="#">Tim Kami</a> -->
-                <!-- <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>-->
               </div>
             </li>
             <li class="nav-item dropdown">
-              <!-- <router-link to="/involved"> -->
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -81,7 +77,6 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >IKUT TERLIBAT</a>
-              <!-- </router-link> -->
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link to="/buildLibrary">
                   <a class="dropdown-item" id="block-1" href="#">AJUKAN PENDIRIAN PERPUSATAKAAN</a>
@@ -91,8 +86,6 @@
                   <a class="dropdown-item" href="#">DAFTAR MENJADI TIM KAMI</a>
                 </router-link>
 
-                <!-- <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>-->
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -115,9 +108,6 @@
                 <router-link to="/fundDonation">
                   <a class="dropdown-item" href="#">DANA</a>
                 </router-link>
-                <!-- <a class="dropdown-item" href="#">Tim Kami</a> -->
-                <!-- <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>-->
               </div>
             </li>
             <li class="nav-item">
@@ -130,19 +120,7 @@
                 <a class="nav-link" href="#">FAQ</a>
               </router-link>
             </li>
-            <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-            </li>-->
           </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>-->
         </div>
       </div>
     </nav>
@@ -150,6 +128,23 @@
 </template>
 
 <style>
+@media (width: 480px) {
+  .view-navbar {
+    /* position: -webkit-sticky; */
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.view-navbar {
+  position: -webkit-sticky;
+  position: relative;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1;
+}
+
 .headerImg {
   max-height: 40px;
   max-width: 181.56px;
@@ -189,10 +184,10 @@
   font-size: 80%;
 }
 
-.navbar-nav {
+/* .navbar-nav {
   text-align: center;
   max-height: 60px;
-}
+} */
 
 /* a[id="block-1"]:target ~ .block-1 {
   -webkit-transform: translateY(0px);

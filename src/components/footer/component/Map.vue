@@ -9,7 +9,7 @@
       <br />
     </div>
     <br /> -->
-    <gmap-map :center="center" :zoom="5" style="width:100%;  height: 400px;">
+    <gmap-map :center="center" :zoom="5" style="width:100%;  height: 400px;" apiKey="AIzaSyDGefW3c1-DE_r1BI8qCNYQE-7t2yO9u-U">
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"
