@@ -166,7 +166,7 @@
 }
 
 .nav-item {
-  margin: 10px 20px 20px 20px;
+  margin: 10px 20px 10px 20px;
   font-family: Gyre Schola, serif;
   font-weight: bold;
   color: black;
