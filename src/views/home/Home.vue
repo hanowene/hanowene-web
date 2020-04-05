@@ -1,277 +1,112 @@
 <template>
-  <div class="container home">
-    <div class="justify-content-center donation">
-      <div class="donation-title eightbit-title">
-        Donasi
-      </div>
-      <div class="eightbit-content">
-        Ayo ikut donasi buku untuk perpustakaan di desa Tangma, Kabupaten Yahukimo - Papua. Untuk donasi buku klik "DONASI" dibawah ini :
-      </div>
-      <button class="button-donation btn">
-        <a href=""><span>DONASI</span></a>
-      </button>
+  <div>
+    <!-- <nav id="nav">
+      <h1>WEB'S</h1>
+      <ul>
+        <li class="active"><a href="#section1">menu1</a></li>
+        <li><a href="#section2">menu2</a></li>
+        <li><a href="#section3">menu3</a></li>
+        <li><a href="#section4">menu4</a></li>
+        <li><a href="#section5">menu5</a></li>
+        <li><a href="#section6">menu6</a></li>
+      </ul>
+    </nav> -->
+
+    <div id="contents">
+      <div id="section1">We love What You do.</div>
+      <div id="section2">Make hay while the sun shines</div>
+      <div id="section3">All in my dream</div>
+      <div id="section4">Be Strict With Myself</div>
+      <div id="section5">Can't Stop to Dream</div>
+      <div id="section6">No Pains No Gain</div>
     </div>
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <img class="banner-item" src="../../assets/banner/eb79ca84-2ca0-464e-933f-064962d4037f_169.jpeg" alt="Los Angeles">
-              <!-- <div class="carousel-caption">
-                  <h3>Los Angeles</h3>
-                  <p>We had such a great time in LA!</p>
-              </div> -->
-              <div class="banner-content">
-                <div class="title-content">
-                  Here is the content 1
-                </div>
-                <div class="body-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula rutrum facilisis. Praesent eu dolor in lacus viverra posuere. Phasellus non scelerisque justo. Phasellus vitae elit quam. Phasellus sit amet ipsum maximus, suscipit tortor sit amet, volutpat lacus. Praesent pharetra porta nisl. Pellentesque ultrices placerat leo vel faucibus.
-                </div>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <img class="banner-item" src="../../assets/banner/4ffca8b7-871f-4a7a-a00f-e05a80d1bc59.jpeg" alt="Chicago">
-              <div class="banner-content">
-                <div class="title-content">
-                  Here is the content 2
-                </div>
-                <div class="body-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula rutrum facilisis. Praesent eu dolor in lacus viverra posuere. Phasellus non scelerisque justo. Phasellus vitae elit quam. Phasellus sit amet ipsum maximus, suscipit tortor sit amet, volutpat lacus. Praesent pharetra porta nisl. Pellentesque ultrices placerat leo vel faucibus.
-                </div>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <img class="banner-item" src="../../assets/banner/ae5d8caf-fbf7-4d46-8e1b-5847c6968339.jpeg" alt="New York">
-              <div class="banner-content">
-                <div class="title-content">
-                  Here is the content 3
-                </div>
-                <div class="body-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula rutrum facilisis. Praesent eu dolor in lacus viverra posuere. Phasellus non scelerisque justo. Phasellus vitae elit quam. Phasellus sit amet ipsum maximus, suscipit tortor sit amet, volutpat lacus. Praesent pharetra porta nisl. Pellentesque ultrices placerat leo vel faucibus.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-arrow">
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-    </div>
+    <!-- <Footer></Footer> -->
   </div>
 </template>
 
 <script>
+  import $ from 'jquery'
+  import JQuery from 'jquery'
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+// import Footer from '@/components/footer/Footer'
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    HelloWorld,
+    // Footer
+  },
+  mounted () {
+    var nav = $("#nav ul li");
+    var contents = $("#contents > div");
+
+    // nav.click(function(e){
+    //   e.preventDefault();
+    //   var target = $(this);
+    //   var index = target.index();
+    //   //alert(index);
+    //   var section = contents.eq(index);
+    //   var offset = section.offset().top;
+    //   //alert(offset);
+    //   $(".offset_top").text(offset);
+      
+    //   $("html,body").animate({scrollTop:offset},600,"easeInOutExpo");
+    // });
+
+
+    $(window).scroll(function(){
+      var wScroll = $(this).scrollTop();
+      
+      $(".scroll_top").text(wScroll);
+      
+      if(wScroll >= contents.eq(0).offset().top){
+        nav.removeClass("active");
+        nav.eq(0).addClass("active");
+      }
+      if(wScroll >= contents.eq(1).offset().top){
+        nav.removeClass("active");
+        nav.eq(1).addClass("active");
+      }
+      if(wScroll >= contents.eq(2).offset().top){
+        nav.removeClass("active");
+        nav.eq(2).addClass("active");
+      }
+      if(wScroll >= contents.eq(3).offset().top){
+        nav.removeClass("active");
+        nav.eq(3).addClass("active");
+      }
+      if(wScroll >= contents.eq(4).offset().top){
+        nav.removeClass("active");
+        nav.eq(4).addClass("active");
+      }
+      if(wScroll >= contents.eq(5).offset().top){
+        nav.removeClass("active");
+        nav.eq(5).addClass("active");
+      }
+      
+    });
   }
 };
 </script>
 
 <style scoped>
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  .carousel {
-    padding: 20px 0px 20px 0px;
-  }
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+  /* font-family: 'Playfair Display', serif; */
 
-  .home {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
+  #nav {overflow:hidden; position:fixed; left:0; top:0; width: 100%; background-color: rgba(255,255,255,0.6);}
+  #nav h1 {float:left; color: #fff; font-size:40px; padding:12px 5px 5px 20px; font-weight:900;	}
+  #nav ul {float:right;}
+  #nav ul li {display: inline;}
+  #nav ul li a {padding: 20px 10px; text-decoration: none; color: #fff; display:inline-block;}
+  #nav ul li.active a {color:#ad1457; border-bottom: 3px solid #ad1457;}
 
-  .donation-title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
-    font-size-adjust: inherit;
-  }
-
-  .donation {
-    margin: 0px 300px 0px 300px;
-    border-style: solid;
-    border-color: black;
-  }
-
-  .eightbit-title {
-   font-family: '8BITWONDERNominal';
-   font-size: 15px;
-   /* font-weight: normal;
-   font-style: normal; */
-  }
-
-  .eightbit-content {
-   /* font-family: '8BITWONDERNominal'; */
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   /* font-size: 20px; */
-   /* font-weight: lighter; */
-   /* font-style: italic; */
-  }
-
-  .button-donation {
-    margin-bottom: 10px;
-  }
-  
-  .button.green {
-    background: #cae285;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cae285), to(#a3cd5a));
-    background: -moz-linear-gradient(#cae285, #a3cd5a);
-    background: linear-gradient(#cae285, #a3cd5a);
-    border: solid 1px #aad063;
-    border-bottom: solid 3px #799545;
-    box-shadow: inset 0 0 0 1px #e0eeb6;
-    /* color: #5d7731; */
-    text-shadow: 0 1px 0 #d0e5a4; }
-    
-  .button.green:hover {
-    background: #abd164;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#abd164), to(#b9d972));
-    background: -moz-linear-gradient(#abd164, #b9d972);
-    background: linear-gradient(#abd164, #b9d972);
-    border: solid 1px #98b85b;
-    border-bottom: solid 3px #799545;
-    box-shadow: inset 0 0 0 1px #cce3a1; }
-    
-  .button.green:active {
-    background: #a4cb5d;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#a4cb5d), to(#9ec45a));
-    background: -moz-linear-gradient(#a4cb5d, #9ec45a);
-    background: linear-gradient(#a4cb5d, #9ec45a);
-    border: solid 1px #6e883f;
-    box-shadow: inset 0 10px 15px 0 #90b352; }
-    
-  
-  .btn {
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 92px;
-    color: #fff;
-    /* background-color: gray; */
-  }
-  .btn span,
-  .btn:before,
-  .btn:after {
-    float: left;
-  }
-  .btn span {
-    background: url('https://confnu-production.s3.amazonaws.com/conference_editions/8/images/13/image/repeating-sprite.png') 0 0 repeat-x;
-    padding: 0 14px;
-  }
-  .btn:before,
-  .btn:after {
-    content: '';
-    height: 92px;
-    width: 14px;
-    background: url('https://confnu-production.s3.amazonaws.com/conference_editions/8/images/16/image/sprite.png') 0 0 no-repeat;
-  }
-  .btn:after { background-position: -14px 0; }
-
-  /* Primary button hover state */
-  .btn:hover span { background-position: 0 -92px; }
-  .btn:hover:before { background-position: -28px 0; }
-  .btn:hover:after { background-position: -42px 0; }
-
-
-  /* Secondary button */
-  .btn-secondary span{ background-position: 0 -184px; }
-  .btn-secondary:before { background-position: 0 -92px; }
-  .btn-secondary:after { background-position: -14px -92px; }
-
-  /* Primary button hover state */
-  .btn-secondary:hover span { background-position: 0 -276px; }
-  .btn-secondary:hover:before { background-position: -28px -92px; }
-  .btn-secondary:hover:after { background-position: -42px -92px; }
-
-  /* .carousel-slide {
-    border-style: solid;
-  } */
-
-  .carousel-item {
-    text-align: left;
-    /* justify-content: space-between; */
-  }
-
-  .banner-item {
-    max-width: 600px;
-    max-height: 500px;
-  }
-
-  .banner-content {
-    margin-left: 30px;
-    max-width: 500px;
-  }
-
-  .title-content {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-
-  .body-content {
-
-  }
-
-  .carousel-arrow {
-
-  }
-
-  .carousel-control-prev {
-    max-width: 15px;
-    /* text-align: left; */
-    padding: 360px 200px 0px 10px;
-  }
-
-  .carousel-control-next {
-    max-width: 15px;
-    /* text-align: right; */
-    padding: 360px 535px 0px 200px;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    /* height: 100px;
-    width: 100px; */
-    /* outline: black;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-image: none; */
-    /* content: '>';
-    font-size: 30px;
-    color: red; */
-    background-image: none;
-    /* background-color: black; */
-  }
-
-  .carousel-control-next-icon:after {
-    content: '>';
-    font-size: 30px;
-    font-weight: bold;
-    color: red;
-  }
-
-  .carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 30px;
-    font-weight: bold;
-    color: red;
-  }
+  #contents {text-align: center; font-size: 50px; color:#fff; font-weight:100; font-family: 'Playfair Display', serif;}
+  #contents > div {height: 100vh; line-height: 100vh;}
+  #section1 {background-color: #42a5f5;}
+  #section2 {background-color: #4db6ac;}
+  #section3 {background-color: #4dd0e1;}
+  #section4 {background-color: #4fc3f7;}
+  #section5 {background-color: #c0ca33;}
+  #section6 {background-color: #7cb342;}
 </style>
