@@ -43,14 +43,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "ourTeam" */ '../views/about/OurTeam.vue')
   },
   {
-    path: '/library',
-    name: 'library',
-    // route level code-splitting
-    // this generates a separate chunk (library.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "library" */ '../views/project/Library.vue')
-  },
-  {
     path: '/involved',
     name: 'involved',
     // route level code-splitting
@@ -115,12 +107,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "faq" */ '../views/faq/Faq.vue')
   },
   {
-    path: '/library',
-    name: 'library',
+    path: '/library-project',
+    name: 'LibraryProject',
     // route level code-splitting
     // this generates a separate chunk (faq.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "faq" */ '../views/project/Library.vue')
+    component: () => import(/* webpackChunkName: "faq" */ '../views/project/LibraryProject.vue')
   },
   {
     path: '/education-project',

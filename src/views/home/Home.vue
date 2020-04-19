@@ -36,7 +36,6 @@
   import JQuery from 'jquery'
   // @ is an alias to /src
   import HomeComponent from '@/components/HomeComponent'
-  import Project from '@/views/project/Library'
   import Partnership from '@/views/partnership/Partnership'
   import AboutUs from '@/views/about/About'
   import WhereWe from '@/views/about/WhereWe'
