@@ -13,12 +13,19 @@
     </nav> -->
 
     <div id="contents">
-      <div id="section1">We love What You do.</div>
-      <div id="section2">Make hay while the sun shines</div>
-      <div id="section3">All in my dream</div>
-      <div id="section4">Be Strict With Myself</div>
-      <div id="section5">Can't Stop to Dream</div>
-      <div id="section6">No Pains No Gain</div>
+      <home-component id="section1" class="sections"/>
+      <what-we-do id="section2" class="sections"/>
+      <inspire id="section3" class="sections"/>
+      <partnership id="section4" class="sections"/>
+      <about-us id="section5" class="sections"/>
+      <where-we id="section6" class="sections"/>
+      <join-us id="section7" class="sections"/>
+      <!-- <div id="section1">We love What You do.</div> -->
+      <!-- <div id="section2" class="sections">Make hay while the sun shines</div> -->
+      <!-- <div id="section3" class="sections">All in my dream</div> -->
+      <!-- <div id="section4" class="sections">Be Strict With Myself</div> -->
+      <!-- <div id="section5" class="sections">Can't Stop to Dream</div> -->
+      <!-- <div id="section6" class="sections">No Pains No Gain</div> -->
     </div>
     <!-- <Footer></Footer> -->
   </div>
@@ -27,14 +34,28 @@
 <script>
   import $ from 'jquery'
   import JQuery from 'jquery'
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-// import Footer from '@/components/footer/Footer'
+  // @ is an alias to /src
+  import HomeComponent from '@/components/HomeComponent'
+  import Project from '@/views/project/Library'
+  import Partnership from '@/views/partnership/Partnership'
+  import AboutUs from '@/views/about/About'
+  import WhereWe from '@/views/about/WhereWe'
+  import JoinUs from '@/views/involve/JoinTeam'
+  import WhatWeDo from '@/views/project/WhatWeDo'
+  import Inspire from '@/views/about/Inspire'
+  // import Footer from '@/components/footer/Footer'
 
 export default {
   name: "home",
   components: {
-    HelloWorld,
+    HomeComponent,
+    Project,
+    Partnership,
+    AboutUs,
+    WhereWe,
+    JoinUs,
+    WhatWeDo,
+    Inspire
     // Footer
   },
   mounted () {
@@ -84,6 +105,10 @@ export default {
         nav.removeClass("active");
         nav.eq(5).addClass("active");
       }
+      // if(wScroll >= contents.eq(6).offset().top){
+      //   nav.removeClass("active");
+      //   nav.eq(6).addClass("active");
+      // }
       
     });
   }
@@ -101,12 +126,17 @@ export default {
   #nav ul li a {padding: 20px 10px; text-decoration: none; color: #fff; display:inline-block;}
   #nav ul li.active a {color:#ad1457; border-bottom: 3px solid #ad1457;}
 
-  #contents {text-align: center; font-size: 50px; color:#fff; font-weight:100; font-family: 'Playfair Display', serif;}
-  #contents > div {height: 100vh; line-height: 100vh;}
+  /* #contents {text-align: center; font-size: 50px; color:#fff; font-weight:100; font-family: 'Playfair Display', serif;} */
+  /* #contents > div {height: 100vh; line-height: 100vh;} */
   #section1 {background-color: #42a5f5;}
   #section2 {background-color: #4db6ac;}
   #section3 {background-color: #4dd0e1;}
   #section4 {background-color: #4fc3f7;}
   #section5 {background-color: #c0ca33;}
   #section6 {background-color: #7cb342;}
+  #section7 {background-color: #36b45a;}
+  .sections {
+    padding: 150px; 
+    /* height: 100vh; */
+  }
 </style>

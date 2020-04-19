@@ -3,9 +3,9 @@
     <footer>
       <div class="container">
         <div class="footer-top">
-          <div>
+          <!-- <div>
             <MapFooter class="justify-content-center"></MapFooter>
-          </div>
+          </div> -->
           <div class="row footer-information">
             <div class="col-md-6 col-lg-4 about-footer">
               <div class="footer-title">
@@ -40,7 +40,7 @@
               </div>
               <ul>
                 <li>
-                  <iframe width="350" height="300" src="https://www.youtube.com/embed/izzUyTtQDIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <!-- <iframe width="350" height="300" src="https://www.youtube.com/embed/izzUyTtQDIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                   <!-- <a href="#">Aktivitas Kami</a> -->
                 </li>
               </ul>
@@ -76,7 +76,7 @@
                   </tr>
                 </tbody>
               </table>
-              <hr />
+              <!-- <hr />
               <div class="text-left">Media & Partner:</div>
               <br/>
               <div class="footer-logo">
@@ -101,7 +101,7 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -122,11 +122,11 @@
 </template>
 
 <script>
-import MapFooter from "@/components/footer/component/Map";
+// import MapFooter from "@/components/footer/component/Map";
 
 export default {
   components: {
-    MapFooter
+    // MapFooter
   }
 };
 </script>

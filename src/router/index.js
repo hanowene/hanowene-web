@@ -113,6 +113,30 @@ const routes = [
     // this generates a separate chunk (faq.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "faq" */ '../views/faq/Faq.vue')
+  },
+  {
+    path: '/library',
+    name: 'library',
+    // route level code-splitting
+    // this generates a separate chunk (faq.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "faq" */ '../views/project/Library.vue')
+  },
+  {
+    path: '/education-project',
+    name: 'EducationProject',
+    // route level code-splitting
+    // this generates a separate chunk (faq.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "faq" */ '../views/project/EducationProject.vue')
+  },
+  {
+    path: '/electric-project',
+    name: 'ElectricProject',
+    // route level code-splitting
+    // this generates a separate chunk (faq.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "faq" */ '../views/project/ElectricProject.vue')
   }
 ]
 

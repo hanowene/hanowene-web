@@ -11,7 +11,7 @@
       <div href="" class="button" id="button-5">
         <div id="translate"></div>
         <a href="">
-          Our Blog
+          Blog kami
         </a>
       </div>
     </div>
@@ -53,6 +53,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: khaki;
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 a {
@@ -72,7 +77,6 @@ a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   box-shadow: ivory;
   border: 1px solid;
-  box-shadow: 5px 10px #888888;
 }
 
 
@@ -93,7 +97,7 @@ a {
   height: 250%;
   left: -200px;
   top: -30px;
-  background: rgb(101, 224, 224);
+  background: rgb(134, 133, 133);
   position: absolute;
   transition: all .3s ease-Out;
 }

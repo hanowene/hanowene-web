@@ -1,5 +1,5 @@
 <template>
-  <div class="library container">
+  <div class="library">
     <h1>Perpustakaan</h1>
     <a>
       Pendanaan kami berasal dari individu, yayasan dan perusahaan yang percaya pada pekerjaan kami dan memberikan kontribusi pribadi, donasi atau memberikan dukungan melalui program tanggung jawab sosial perusahaan mereka. Jika Anda ingin mendukung pekerjaan kami, silakan mempertimbangkan memberikan donasi, atau mempromosikan pekerjaan kami dengan memberi tahu orang lain dan menyukai sosial media kami di Facebook, Instagram, Twitter dan YouTube.
