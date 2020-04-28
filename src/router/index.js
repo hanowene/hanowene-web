@@ -19,7 +19,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/about/About.vue')
   },
   {
-    path: '/backgroundStory',
+    path: '/background-story',
     name: 'backgroundStory',
     // route level code-splitting
     // this generates a separate chunk (backgroundStory.[hash].js) for this route
@@ -27,7 +27,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "visionMission" */ '../views/about/BackgroundStory.vue')
   },
   {
-    path: '/visionMission',
+    path: '/vission-mission',
     name: 'visionMission',
     // route level code-splitting
     // this generates a separate chunk (visionMission.[hash].js) for this route
@@ -35,7 +35,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "backgroundStory" */ '../views/about/VisionMission.vue')
   },
   {
-    path: '/ourTeam',
+    path: '/our-team',
     name: 'ourTeam',
     // route level code-splitting
     // this generates a separate chunk (ourTeam.[hash].js) for this route
@@ -51,7 +51,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "involved" */ '../views/involve/Involved.vue')
   },
   {
-    path: '/buildLibrary',
+    path: '/build-library',
     name: 'buildLibrary',
     // route level code-splitting
     // this generates a separate chunk (buildLibrary.[hash].js) for this route
@@ -59,7 +59,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "buildLibrary" */ '../views/involve/BuildLibrary.vue')
   },
   {
-    path: '/joinTeam',
+    path: '/join-team',
     name: 'joinTeam',
     // route level code-splitting
     // this generates a separate chunk (joinTeam.[hash].js) for this route
@@ -67,7 +67,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "joinTeam" */ '../views/involve/JoinTeam.vue')
   },
   {
-    path: '/bookDonation',
+    path: '/book-donation',
     name: 'bookDonation',
     // route level code-splitting
     // this generates a separate chunk (bookDonation.[hash].js) for this route
@@ -75,7 +75,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "bookDonation" */ '../views/donation/BookDonation.vue')
   },
   {
-    path: '/energyAssistance',
+    path: '/energy-assistance',
     name: 'energyAssistance',
     // route level code-splitting
     // this generates a separate chunk (energyAssistance.[hash].js) for this route
@@ -83,7 +83,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "energyAssistance" */ '../views/donation/EnergyAssistance.vue')
   },
   {
-    path: '/fundDonation',
+    path: '/fund-donation',
     name: 'fundDonation',
     // route level code-splitting
     // this generates a separate chunk (fundDonation.[hash].js) for this route
@@ -91,7 +91,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "fundDonation" */ '../views/donation/FundDonation.vue')
   },
   {
-    path: '/ourContact',
+    path: '/our-contact',
     name: 'ourContact',
     // route level code-splitting
     // this generates a separate chunk (ourContact.[hash].js) for this route

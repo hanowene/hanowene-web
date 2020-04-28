@@ -1,11 +1,11 @@
 <template>
   <!-- <div> -->
     <nav id="nav">
-      <a href="#section1">
-        <img class="headerImg active" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
-      </a>
       <!-- <h1 class="active"><a href="#section1">WEB'S</a></h1> -->
       <div v-if="this.$store.state.inPage">
+        <router-link to="/"  @click="this.handleInPage">
+          <img class="headerImg active" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
+        </router-link>
         <ul>
           <li>
             <router-link to="/">
@@ -40,6 +40,9 @@
         </ul>
       </div>
       <div v-else>
+        <a href="#section1">
+          <img class="headerImg active" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
+        </a>
         <ul>
           <li>
             <a href="#section2">What We do</a>

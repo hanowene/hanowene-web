@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    inPage: true
+    inPage: false
   },
   mutations: {
     changeInPage(state, value) {

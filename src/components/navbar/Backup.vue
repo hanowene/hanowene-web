@@ -40,13 +40,13 @@
                 aria-expanded="false"
               >TENTANG KAMI</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link to="/backgroundStory">
+                <router-link to="/background-story">
                   <a class="dropdown-item" href="#">LATAR BELAKANG</a>
                 </router-link>
-                <router-link to="/visionMission">
+                <router-link to="/vission-mission">
                   <a class="dropdown-item" href="#">VISI & MISI</a>
                 </router-link>
-                <router-link to="/ourTeam">
+                <router-link to="/our-team">
                   <a class="dropdown-item" href="#">TIM KAMI</a>
                 </router-link>
               </div>
@@ -78,11 +78,11 @@
                 aria-expanded="false"
               >IKUT TERLIBAT</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link to="/buildLibrary">
+                <router-link to="/build-library">
                   <a class="dropdown-item" id="block-1" href="#">AJUKAN PENDIRIAN PERPUSATAKAAN</a>
                 </router-link>
 
-                <router-link to="/joinTeam">
+                <router-link to="/join-team">
                   <a class="dropdown-item" href="#">DAFTAR MENJADI TIM KAMI</a>
                 </router-link>
 
@@ -99,19 +99,19 @@
                 aria-expanded="false"
               >DONASI</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link to="/bookDonation">
+                <router-link to="/book-donation">
                   <a class="dropdown-item" href="#">BUKU</a>
                 </router-link>
-                <router-link to="/EnergyAssistance">
+                <router-link to="/energy-assitance">
                   <a class="dropdown-item" href="#">TENAGA</a>
                 </router-link>
-                <router-link to="/fundDonation">
+                <router-link to="/fund-donation">
                   <a class="dropdown-item" href="#">DANA</a>
                 </router-link>
               </div>
             </li>
             <li class="nav-item">
-              <router-link to="/ourContact">
+              <router-link to="/our-contact">
                 <a class="nav-link" href="#">KONTAK KAMI</a>
               </router-link>
             </li>

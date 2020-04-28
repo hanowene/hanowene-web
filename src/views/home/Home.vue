@@ -48,7 +48,6 @@ export default {
   name: "home",
   components: {
     HomeComponent,
-    Project,
     Partnership,
     AboutUs,
     WhereWe,
@@ -130,7 +129,7 @@ export default {
   #section1 {background-color: #42a5f5;}
   #section2 {background-color: #4db6ac;}
   #section3 {background-color: #4dd0e1;}
-  #section4 {background-color: #4fc3f7;}
+  /* #section4 {background-color: #4fc3f7;} */
   #section5 {background-color: #c0ca33;}
   #section6 {background-color: #7cb342;}
   #section7 {background-color: #36b45a;}

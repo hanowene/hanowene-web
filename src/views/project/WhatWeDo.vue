@@ -6,7 +6,7 @@
     <div class="project-section">
       <div class="button" id="button-3">
         <div id="circle"></div>
-        <router-link to="/library">
+        <router-link to="/library-project">
           <a href="#" @click="this.handleInPage">
             Perpustakaan
           </a>
