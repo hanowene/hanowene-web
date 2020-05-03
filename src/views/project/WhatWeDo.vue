@@ -6,27 +6,38 @@
     <div class="project-section">
       <div class="button" id="button-3">
         <div id="circle"></div>
-        <router-link to="/library-project">
-          <a href="#" @click="this.handleInPage">
+        <!-- <router-link to="/library-project"> -->
+          <a class="project-click" @click="this.handleInPage">
             Perpustakaan
           </a>
-        </router-link>
+        <!-- </router-link> -->
       </div>
-      <div class="button" id="button-3">
+      <div class="button" id="soon-3">
         <div id="circle"></div>
-        <router-link to="/electric-project">
-          <a href="#" @click="this.handleInPage">
-            Listrik
+        <!-- <router-link to="/electric-project"> -->
+          <a class="project-click" @click="this.handleInPage">
+            <!-- Listrik -->
+            Comming Soon
           </a>
-        </router-link>
+        <!-- </router-link> -->
       </div>
-      <div class="button" id="button-3">
+      <div class="button" id="soon-3">
         <div id="circle"></div>
-        <router-link to="/education-project">
-          <a href="#" @click="this.handleInPage">
-            Wisata Edukasi
+        <!-- <router-link to="/education-project"> -->
+          <a class="project-click" @click="this.handleInPage">
+            <!-- Air -->
+            Comming Soon
           </a>
-        </router-link>
+        <!-- </router-link> -->
+      </div>
+      <div class="button" id="soon-3">
+        <div id="circle"></div>
+        <!-- <router-link to="/education-project"> -->
+          <a class="project-click" @click="this.handleInPage">
+            <!-- Wisata Edukasi -->
+            Comming Soon
+          </a>
+        <!-- </router-link> -->
       </div>
     </div>
   </div>
@@ -63,6 +74,7 @@ export default {
     width: 150px;
     border: 2px solid rgb(40, 41, 41);
     margin: 20px 20px 20px 20px;
+    /* color:ivory; */
     color: rgb(33, 34, 34);
     text-transform: uppercase;
     text-decoration: none;
@@ -90,6 +102,18 @@ export default {
     transition: all .45s ease-Out;
   }
 
+  #soon-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(148, 147, 147);
+  }
+
+  #soon-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+
   #circle {
     width: 0%;
     height: 0%;
@@ -113,5 +137,9 @@ export default {
 
   #button-3:hover a {
     color: #2D3142;
+  }
+
+  #soon {
+    background-color: ivory;
   }
 </style>

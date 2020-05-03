@@ -1,7 +1,7 @@
 <template>
   <div class="vision">
     <div class="resp-container">
-      <iframe class="resp-iframe" src="https://www.youtube.com/embed/lgf2KOWQtB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="resp-iframe" src="https://www.youtube.com/embed/_M8Iv-HIoIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br/>
     <a class="motto">
@@ -10,13 +10,25 @@
     <div>
       <div href="" class="button" id="button-5">
         <div id="translate"></div>
-        <a href="">
-          Blog kami
-        </a>
+        <router-link to="/blog" @click="this.handleInPage">
+          <a href="">
+            Blog kami
+          </a>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    handleInPage() {
+      this.$store.commit('changeInPage')
+    }
+  }
+}
+</script>
 
 <style scoped>
 .resp-container {
