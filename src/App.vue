@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/> -->
-    <Header></Header>
+    <!-- <Header></Header> -->
     <Navbar></Navbar>
     <router-view></router-view>
     <Footer></Footer>
@@ -14,13 +14,13 @@
 
 <script>
 import Navbar from '@/components/navbar/Navbar'
-import Header from '@/components/header/Header'
+// import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 
 export default {
   components: {
     Navbar,
-    Header,
+    // Header,
     Footer
   }
 }

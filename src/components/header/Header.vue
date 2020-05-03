@@ -5,10 +5,10 @@
 </template>
 
 <style>
-  .headerImg {
+  /* .headerImg {
     width: 50%;
     height: 100%;
     max-height: 100px;
     max-width: 303px;
-  }
+  } */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="joinTeam container">
+  <div class="joinTeam">
     <h1>Bergabung Menjadi Tim</h1>
     <a>
       Teman – Teman ingin ikut berpartisipasi membantu dengan menjadi team di Hanowene . kami dengan dan adik sudah menunggu teman – teman.
