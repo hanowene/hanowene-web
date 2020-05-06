@@ -1,7 +1,7 @@
 <template>
   <div class="what-we-do">
     <div class="we-do-title">
-      Yang Kami Kerjakan
+      Proyek Kami
     </div>
     <div class="project-section">
       <div class="button" id="button-3">
@@ -17,7 +17,8 @@
         <!-- <router-link to="/electric-project"> -->
           <a class="project-click" @click="this.handleInPage">
             <!-- Listrik -->
-            Comming Soon
+            Air 
+            (Comming Soon)
           </a>
         <!-- </router-link> -->
       </div>
@@ -26,7 +27,7 @@
         <!-- <router-link to="/education-project"> -->
           <a class="project-click" @click="this.handleInPage">
             <!-- Air -->
-            Comming Soon
+            Listrik (Comming Soon)
           </a>
         <!-- </router-link> -->
       </div>
@@ -35,7 +36,7 @@
         <!-- <router-link to="/education-project"> -->
           <a class="project-click" @click="this.handleInPage">
             <!-- Wisata Edukasi -->
-            Comming Soon
+            Wisata Edukasi (Comming Soon)
           </a>
         <!-- </router-link> -->
       </div>

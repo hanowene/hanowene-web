@@ -44,7 +44,7 @@
         <router-link v-if="isPopupLogo" class="hanowene-logo" to="/"  @click="this.handleInPage">
           <img class="headerImg active" src="https://hanowene.files.wordpress.com/2018/10/cropped-hanowene_logo-11.png" alt="">
         </router-link>
-        <ul class="text-right">
+        <ul>
           <li>
             <router-link to="/">
               <a @click="this.handleInPage">What We do</a>
@@ -112,6 +112,7 @@ export default {
       this.inPage = this.$store.state.inPage
     },
     handleInPage() {
+      // console.log(`here`);
       this.$store.commit('changeInPage')
     },
     popUpHanoweneLogo() {
@@ -120,7 +121,7 @@ export default {
     }
   },
   computed: {
-    gettingPge: function() {
+    gettingPage: function() {
       return this.inPage
     }
   },
@@ -134,7 +135,7 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
   /* font-family: 'Playfair Display', serif; */
 
-  #nav {overflow:hidden; position:fixed; left:0; top:0; width: 100%; background-color: rgba(7, 7, 7, 0.6); z-index: 1;}
+  #nav {position:fixed;top:0; width: 100%; background-color: rgba(7, 7, 7, 0.6); z-index: 1; padding-left: 0px;}
   #nav h1 {float:left; color: #fff; font-size:40px; padding:12px 5px 5px 20px; font-weight:900;	}
   #nav ul {float:right;}
   #nav ul li {display: inline;}

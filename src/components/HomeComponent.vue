@@ -1,6 +1,6 @@
 <template>
   <div class="vision">
-    <div class="resp-container">
+    <div class="resp-container embed-responsive-4by3">
       <iframe class="resp-iframe" src="https://www.youtube.com/embed/_M8Iv-HIoIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br/>
@@ -10,8 +10,8 @@
     <div>
       <div href="" class="button" id="button-5">
         <div id="translate"></div>
-        <router-link to="/blog" @click="this.handleInPage">
-          <a href="">
+        <router-link to="/blog">
+          <a @click="this.handleInPage">
             Blog kami
           </a>
         </router-link>

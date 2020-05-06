@@ -40,7 +40,7 @@
             <div class="card-body text-center"><img src="/img/team/handriyanti.0194072e.png" alt="Bologna" class="avatar rounded-circle">
             <h4 class="card-title">Handriyanti</h4>
             <h6 class="card-subtitle mb-2 text-muted">Phd Student</h6>
-            <p class="card-text"><a>saat ini sedang menempuh pendidikan S3 di Italia dalam bidang energi terbarukan.</a>
+            <p class="card-text"><a>sebagai 'Energy Analyst', Mendapatkan gelar S3 di Italia dalam bidang energi terbarukan</a>
             <br>
             <br>
             <a>Sejak lulus dari Teknik Lingkungan ITS pada tahun 2013, Handriyanti telah memutuskan untuk menekuni bidang ini karena dia ingin seluruh daerah di Indonesia dapat menikmati listrik berharga terjangkau dari sumber-sumber yang dapat ditemui di mana pun.</a>
@@ -88,6 +88,8 @@
 </template>
 
 <script>
+import '@/components/style/newPage/LandingPage.vue'
+
 export default {
   created() {
     this.scrollToTop()

@@ -9,9 +9,13 @@
           <div class="row footer-information">
             <div class="col-md-6 col-lg-4 about-footer">
               <div class="footer-title">
-                <h4>Our Office</h4>
+                <h4>Alamat</h4>
               </div>
               <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                    Jalan Kampung Baru 2 No.34-b, RT.8/RW.2, Ulujami, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
+                </li>
                 <li>
                   <a href="tel:(010) 1234 4321">
                     <i class="fas fa-phone fa-flip-horizontal"></i>Jakarta : +62 823 1067 2462 (ALJUFRI)
@@ -27,16 +31,12 @@
                     <i class="fas fa-phone fa-flip-horizontal"></i>Wamena : +62 813 4326 5057 (Bapa Romi)
                   </a>
                 </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i>
-                    Jalan Kampung Baru 2 No.34-b, RT.8/RW.2, Ulujami, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
-                </li>
               </ul>
             </div>
 
             <div class="col-md-6 col-lg-4 page-more-info">
               <div class="footer-title">
-                <h4>More Info</h4>
+                <h4>Info lebih lanjut</h4>
               </div>
               <ul>
                 <li>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-md-6 col-lg-4 open-hours">
               <div class="footer-title">
-                <h4>Open hours</h4>
+                <h4>Jam operasional</h4>
                 <ul class="footer-social">
                   <li>
                     <a href target="_blank">

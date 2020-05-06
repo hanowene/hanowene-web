@@ -7,7 +7,7 @@
     <div href="" class="button" id="button-5">
         <div id="translate"></div>
         <router-link to="/our-team">
-          <a href="">
+          <a @click="this.handleInPage">
             Tim Kami
           </a>
         </router-link>
